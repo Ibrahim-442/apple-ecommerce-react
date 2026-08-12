@@ -11,12 +11,18 @@ A modern and responsive e-commerce website for Apple products, built with React.
 ✨ Features
 
 🧭 Responsive navigation bar with smooth client-side routing
+
 🏠 Modern homepage with featured and latest products
+
 🔍 Product filtering by price, rating, color, and more
+
 🛒 Shopping cart with add, remove, and clear functionality
+
 ❤️ Favorites system for saving products
+
 📦 Dynamic product details pages
-📱 Responsive design for desktop, tablet, and mobile screens
+
+
 
 ---
 🛠️ Built With
