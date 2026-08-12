@@ -28,6 +28,10 @@ A modern and responsive e-commerce website for Apple products, built with React.
 🛠️ Built With
 
 ⚛️ React.js
+
 🟨 JavaScript (ES6+)
+
 🎨 CSS3
+
 🅱️ Bootstrap 5
+
