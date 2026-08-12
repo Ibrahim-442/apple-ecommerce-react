@@ -5,14 +5,14 @@ A modern and responsive e-commerce website for Apple products, built with React.
 ---
 🚀 Live Demo
 
-🌐 View Live Demo
+🌐 [View Live Demo](https://apple-ecommerce-react.vercel.app/)
 
 ---
 ✨ Features
 
 🧭 Responsive navigation bar with smooth client-side routing
 🏠 Modern homepage with featured and latest products
-🔍 Product filtering by price, rating, storage, RAM, processor, color, and more
+🔍 Product filtering by price, rating, color, and more
 🛒 Shopping cart with add, remove, and clear functionality
 ❤️ Favorites system for saving products
 📦 Dynamic product details pages
@@ -25,13 +25,3 @@ A modern and responsive e-commerce website for Apple products, built with React.
 🟨 JavaScript (ES6+)
 🎨 CSS3
 🅱️ Bootstrap 5
-🧭 React Router
-🌐 Context API
-🔧 Git & GitHub
-📚 What I Practiced
-
-🚀 Live Demo
-
-🌐 View Live Demo
-
-
