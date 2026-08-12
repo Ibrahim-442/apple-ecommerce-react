@@ -193,7 +193,7 @@ export default function User() {
             </div>
 
             <div>
-              <span>Username</span>
+              <span>Username: </span>
               <strong>{user.username}</strong>
             </div>
           </div>
@@ -204,7 +204,7 @@ export default function User() {
             </div>
 
             <div>
-              <span>Email Address</span>
+              <span>Email Address: </span>
               <strong>{user.email}</strong>
             </div>
           </div>
@@ -215,7 +215,7 @@ export default function User() {
             </div>
 
             <div>
-              <span>Phone Number</span>
+              <span>Phone Number: </span>
               <strong>{user.phone}</strong>
             </div>
           </div>
@@ -225,7 +225,7 @@ export default function User() {
             </div>
 
             <div className="profile-item-content">
-              <span>ADDRESS</span>
+              <span>ADDRESS: </span>
               <strong>{user.address}</strong>
             </div>
           </div>
@@ -237,7 +237,7 @@ export default function User() {
               </div>
 
               <div className="profile-item-content">
-                <span>AREA</span>
+                <span>AREA: </span>
                 <strong>{user.area}</strong>
               </div>
             </div>
@@ -248,7 +248,7 @@ export default function User() {
               </div>
 
               <div className="profile-item-content">
-                <span>CITY</span>
+                <span>CITY: </span>
                 <strong>{user.city}</strong>
               </div>
             </div>
