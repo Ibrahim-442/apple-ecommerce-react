@@ -1,0 +1,102 @@
+.sideNav {
+    
+  width: 250px;
+  min-height: 100vh;
+  flex-shrink: 0;
+  padding: 30px;
+  background: #f5f5f7;
+  margin-right: 30px;
+  border-right: 1px solid #e5e5e5;
+
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.08);
+}
+.sideNav hr {
+  margin-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+}
+.h3filter
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sideNav h3{
+ 
+  margin-top: 75px;
+  font-family: "Poppins", sans-serif;
+}
+.sideNav h5 {
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.sideNav label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.noselect {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #827f7f;
+}
+
+.noselect,
+.noselect span {
+  transition: 200ms;
+}
+
+.noselect .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+}
+
+.noselect .icon {
+  position: absolute;
+  border-left: 1px solid #4f5351;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noselect svg {
+  width: 15px;
+  fill: #eee;
+}
+
+.noselect:hover {
+  background: #4f5351;
+  background-color: #4f5351;
+  box-shadow: 0px 15px 20px #4f5351;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.noselect:hover .text {
+  color: transparent;
+}
+
+.noselect:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+.noselect:focus {
+  outline: none;
+}
+
+.noselect:active .icon svg {
+  transform: scale(0.8);
+}

@@ -1,0 +1,280 @@
+.ArrivalLine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ArrivalLine1 {
+  width: 70%;
+}
+
+.ShowAll {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.ShowAll:hover {
+  background-color: #4f5351;
+  box-shadow: 0 15px 20px #4f5351;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.ShowAll:active {
+  transform: translateY(-1px);
+}
+
+.NewArivaltitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.allnewArival {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 90px;
+  margin-left: 90px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.productImage {
+  width: auto;
+  height: auto;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.productImageBox {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fc;
+  border: 1px solid #e1e4e8;
+  border-radius: 12px;
+  position: relative;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 8px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.cardinfo {
+  width: 100%;
+  height: 220px;
+  background-color: #f5f6fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.productName {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 14px;
+}
+
+.favorite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  font-size: 22px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.favcolor {
+  color: red;
+}
+
+@media (max-width: 1200px) {
+  .allnewArival {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .products {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .allnewArival {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+  }
+
+  .ArrivalLine1 {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .allnewArival {
+    margin: 35px 15px 40px;
+  }
+
+  .NewArivaltitle {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .ArrivalLine {
+    width: 100%;
+  }
+
+  .ArrivalLine1 {
+    width: 90%;
+  }
+
+  .ShowAll {
+    padding: 1.1em 2.2em;
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 35px;
+  }
+
+  .productImageBox {
+    height: 200px;
+  }
+
+  .cardinfo {
+    height: 210px;
+    margin-bottom: 30px;
+  }
+
+  .productName {
+    font-size: 15px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .allnewArival {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .productImageBox {
+    height: 180px;
+  }
+
+  .cardinfo {
+    height: 200px;
+  }
+
+  .favorite {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    top: 8px;
+    right: 8px;
+  }
+}.product-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.product-link:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.cardinfo {
+  width: 100%;
+  min-height: 220px;
+  background-color: #f5f6fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  border-radius: 0 0 12px 12px;
+}
+
+.productImageBox {
+  width: 100%;
+  max-width: 280px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fc;
+  border: 1px solid #e1e4e8;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 8px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.productImage {
+  width: auto;
+  height: auto;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.product-link:hover .productImage {
+  transform: scale(1.06);
+}

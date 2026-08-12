@@ -1,0 +1,141 @@
+.categoryparent {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.categoryChild {
+  padding: 50px;
+}
+
+.CategoryIcon {
+  width: 30px;
+  height: 50px;
+}
+
+.productCategory {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.allCategory {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  width: 80px;
+  height: 80px;
+}
+
+.categorysection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.categorysection:hover {
+  transform: scale(1.15);
+}
+
+.productCategory a,
+.productCategory a:hover,
+.productCategory a:focus,
+.productCategory a:active,
+.productCategory a:visited {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+.MacIcon,
+.PhoneIphone,
+.Headphones,
+.Earbuds {
+  text-transform: uppercase;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.MacIcon:hover,
+.PhoneIphone:hover,
+.Headphones:hover,
+.Earbuds:hover {
+  background-color: #4f5351;
+  box-shadow: 0 15px 20px #4f5351;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+@media (max-width: 900px) {
+  .categoryChild {
+    padding: 40px 25px;
+  }
+
+  .productCategory {
+    gap: 35px;
+  }
+
+  .allCategory {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 600px) {
+  .categoryparent {
+    padding-top: 30px;
+  }
+
+  .categoryChild {
+    padding: 30px 15px;
+  }
+
+  .productCategory {
+    gap: 25px;
+  }
+
+  .allCategory {
+    width: 70px;
+    height: 70px;
+  }
+
+  .CategoryIcon {
+    width: 26px;
+    height: 45px;
+  }
+
+  .categorysection:hover {
+    transform: scale(1.08);
+  }
+}
+
+@media (max-width: 400px) {
+  .categoryChild {
+    padding: 25px 10px;
+  }
+
+  .productCategory {
+    gap: 20px;
+  }
+
+  .allCategory {
+    width: 62px;
+    height: 62px;
+  }
+
+  .CategoryIcon {
+    width: 23px;
+    height: 40px;
+  }
+}

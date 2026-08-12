@@ -1,0 +1,246 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 50px;
+  padding-top: 70px;
+}
+
+.productImage {
+  width: auto;
+  height: auto;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.productImageBox {
+  width: 250px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fc;
+  border: 1px solid #e1e4e8;
+  border-radius: 12px;
+  position: relative;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 8px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.cardinfo {
+  width: 250px;
+  min-height: 270px;
+  height: auto;
+  background-color: #f5f6fa;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+.productName {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 14px;
+}
+
+.favorite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  font-size: 22px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.rating i {
+  color: #ffc107;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 40px 0;
+}
+
+.pagination button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #4f5351;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #4f5351;
+  box-shadow: 0px 15px 20px #4f5351;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.pagination button.active {
+  background: #4f5351;
+  color: white;
+  border-color: #4f5351;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.product-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 1200px) {
+  .products {
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .products {
+    grid-template-columns: repeat(2, 250px);
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .products {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 30px;
+    padding-top: 40px;
+    margin-top: 30px;
+  }
+
+  .productImageBox {
+    width: 90vw;
+    max-width: 350px;
+  }
+
+  .cardinfo {
+    width: 90vw;
+    max-width: 350px;
+  }
+
+  .productName {
+    font-size: 15px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .pagination {
+    gap: 5px;
+    margin: 30px 0;
+  }
+
+  .pagination button {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .products {
+    gap: 20px;
+  }
+
+  .productImageBox {
+    width: 92vw;
+    height: 170px;
+  }
+
+  .cardinfo {
+    width: 92vw;
+    min-height: 250px;
+  }
+
+  .pagination button {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+}
+
+.cardinfo {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  min-height: 220px;
+  background-color: #f5f6fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  border-radius: 0 0 12px 12px;
+}
+.cardinfo:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.productImageBox {
+  width: 100%;
+  max-width: 280px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fc;
+  border: 1px solid #e1e4e8;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 8px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.productImage {
+  width: auto;
+  height: auto;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.cardinfo:hover .productImage {
+  transform: scale(1.06);
+}
