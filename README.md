@@ -5,7 +5,7 @@ A modern and responsive e-commerce website for Apple products, built with React.
 ---
 🚀 Live Demo
 
-🌐 [View Live Demo]([https://apple-ecommerce-react.vercel.app/](https://e-commerce-react-project-blush.vercel.app/))
+🌐 [View Live Demo](https://e-commerce-react-project-blush.vercel.app/)
 
 ---
 ✨ Features
