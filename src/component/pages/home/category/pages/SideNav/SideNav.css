@@ -100,3 +100,14 @@
 .noselect:active .icon svg {
   transform: scale(0.8);
 }
+@media (max-width: 768px) {
+  .sideNav {
+    width: 100%;
+    min-height: auto;
+    margin-right: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}

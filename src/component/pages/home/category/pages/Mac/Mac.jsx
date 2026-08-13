@@ -4,11 +4,16 @@ import "../all.css";
 import { Link } from "react-router-dom";
 
 export default function Mac() {
-  const { love, toggleLove, filteredProducts } = useContext(ProductsContext);
+  const { love, toggleLove, filteredProducts,clearFilters } = useContext(ProductsContext);
 
   const macBooks = filteredProducts.filter((product) =>
     product.title.toLowerCase().includes("macbook"),
   );
+ useEffect(() => {
+    return () => {
+      clearFilters();
+    };
+  }, []);
 
   const [currentPage, setCurrentPage] = useState(1);
 

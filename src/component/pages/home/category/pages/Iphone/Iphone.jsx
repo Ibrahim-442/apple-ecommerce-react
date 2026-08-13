@@ -4,7 +4,7 @@ import "../all.css";
 import { Link } from "react-router-dom";
 
 export default function Iphone() {
-  const { love, toggleLove, filteredProducts } = useContext(ProductsContext);
+  const { love, toggleLove, filteredProducts,clearFilters } = useContext(ProductsContext);
   const changePage = (page) => {
     setCurrentPage(page);
 
@@ -13,6 +13,11 @@ export default function Iphone() {
       behavior: "smooth",
     });
   };
+ useEffect(() => {
+    return () => {
+      clearFilters();
+    };
+  }, []);
 
   const Iphone = filteredProducts.filter((product) =>
     product.title.toLowerCase().includes("iphone"),

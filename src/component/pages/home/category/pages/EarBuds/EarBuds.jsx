@@ -1,10 +1,15 @@
-import { useContext } from "react";
+import { useContext , useEffect} from "react";
 import { ProductsContext } from "../../../../../../context/context.jsx";
 import "../all.css";
 import { Link } from "react-router-dom";
 
 export default function EarBuds() {
-  const {  love, toggleLove,filteredProducts } = useContext(ProductsContext);
+  const {  love, toggleLove,filteredProducts,clearFilters  } = useContext(ProductsContext);
+ useEffect(() => {
+    return () => {
+      clearFilters();
+    };
+  }, []);
 
   const EarBuds = filteredProducts .filter(
     (product) =>

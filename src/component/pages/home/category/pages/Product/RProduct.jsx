@@ -4,12 +4,17 @@ import "../all.css";
 import { Link } from "react-router-dom";
 
 export default function Product() {
-  const { love, toggleLove, filteredProducts } = useContext(ProductsContext);
+  const { love, toggleLove, filteredProducts, clearFilters  } = useContext(ProductsContext);
 
   const [randomProducts, setRandomProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
 
   const productsPerPage = 12;
+ useEffect(() => {
+    return () => {
+      clearFilters();
+    };
+  }, []);
 
   const changePage = (page) => {
     setCurrentPage(page);

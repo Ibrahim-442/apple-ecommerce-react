@@ -1,11 +1,16 @@
-import { useContext } from "react";
+import { useContext , useEffect} from "react";
 import { ProductsContext } from "../../../../../../context/context.jsx";
 import "../all.css";
 import { Link } from "react-router-dom";
 
 export default function Headphone() {
-  const { products, love, toggleLove, filteredProducts } =
+  const { products, love, toggleLove, filteredProducts,clearFilters  } =
     useContext(ProductsContext);
+ useEffect(() => {
+    return () => {
+      clearFilters();
+    };
+  }, []);
 
   const headphone = filteredProducts.filter((product) =>
     product.title.toLowerCase().trim().includes("airpods max"),

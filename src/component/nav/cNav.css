@@ -13,10 +13,12 @@
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+  flex-wrap: nowrap;
 }
 
 .navbar:hover {
   transform: translateY(8px);
+
   box-shadow:
     0 8px 20px rgba(0, 0, 0, 0.4),
     0 20px 40px rgba(0, 0, 0, 0.4);
@@ -42,14 +44,6 @@
   padding-left: 45px;
 }
 
-.rightnav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 20px;
-  flex: 1;
-}
-
 .form-control {
   border-radius: 25px;
   width: 100%;
@@ -63,6 +57,7 @@ form {
   min-width: 0;
 }
 
+
 .leftnav {
   margin-left: 20px;
   margin-right: 100px;
@@ -70,6 +65,21 @@ form {
   font-size: 50px;
   flex: 1;
   min-width: 0;
+}
+
+.rightnav {
+  display: flex !important;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+  flex: 1;
+}
+
+
+.navbar .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .iconNav {
@@ -101,13 +111,17 @@ form {
   background: rgba(255, 255, 255, 0.96);
   border: 1px solid #e8e8e8;
   border-radius: 18px;
+
   box-shadow:
     0 20px 50px rgba(0, 0, 0, 0.12),
     0 5px 15px rgba(0, 0, 0, 0.05);
+
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
+
   z-index: 9999;
   overflow: hidden;
+
   animation: searchDrop 0.2s ease;
 }
 
@@ -140,9 +154,11 @@ form {
   border-radius: 13px;
   overflow: hidden;
   cursor: pointer;
+
   transition:
     background 0.25s ease,
     transform 0.25s ease;
+
   box-sizing: border-box;
 }
 
@@ -177,6 +193,7 @@ form {
   border-radius: 11px;
   flex-shrink: 0;
   box-sizing: border-box;
+
   transition:
     transform 0.3s ease,
     background 0.3s ease;
@@ -201,6 +218,7 @@ form {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+
   transition: color 0.25s ease;
 }
 
@@ -216,6 +234,7 @@ form {
   color: #aaa;
   opacity: 0;
   transform: translateX(-6px);
+
   transition:
     opacity 0.25s ease,
     transform 0.25s ease,
@@ -268,6 +287,7 @@ form {
   }
 }
 
+
 @media (max-width: 800px) {
   .navbar {
     min-height: 65px;
@@ -300,18 +320,23 @@ form {
     min-height: 60px;
     padding: 8px 10px;
     box-sizing: border-box;
+    flex-wrap: nowrap;
   }
 
   .leftnav {
-    margin: 0 12px 0 5px;
+    margin: 0 8px 0 2px;
     font-size: 30px;
+    flex: 0 0 auto;
   }
 
   form {
     flex: 1;
+    min-width: 0;
+    margin: 0;
   }
 
   .search-box {
+    width: 100%;
     max-width: none;
   }
 
@@ -327,8 +352,12 @@ form {
   }
 
   .rightnav {
+    flex: 0 0 auto;
     margin-right: 3px;
-    gap: 5px;
+  }
+
+  .navbar .navbar-nav {
+    gap: 2px;
   }
 
   .iconNav {
@@ -358,32 +387,36 @@ form {
 
 @media (max-width: 450px) {
   .navbar {
-    padding: 7px 8px;
+    padding: 7px 5px;
   }
 
   .leftnav {
-    margin-right: 8px;
-    font-size: 25px;
+    margin-right: 5px;
+    font-size: 23px;
   }
 
   .search-box input {
-    height: 37px;
+    height: 36px;
     font-size: 11px;
-    padding-left: 34px;
+    padding-left: 32px;
   }
 
   .search-box .search-icon {
-    left: 10px;
+    left: 9px;
     font-size: 12px;
   }
 
   .rightnav {
-    gap: 2px;
+    margin: 0;
+  }
+
+  .navbar .navbar-nav {
+    gap: 0;
   }
 
   .iconNav {
-    width: 21px;
-    height: 36px;
+    width: 20px;
+    height: 34px;
   }
 
   .result-img {
