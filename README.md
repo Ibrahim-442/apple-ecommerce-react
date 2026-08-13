@@ -1,4 +1,4 @@
-🍎 iStore — Apple E-commerce
+ iStore —  E-commerce
 
 A modern and responsive e-commerce website for Apple products, built with React.js.
 
