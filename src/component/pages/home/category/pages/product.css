@@ -1,0 +1,15 @@
+.productLayout {
+  display: flex;
+  flex-direction: row;
+}
+
+.productLayout > main {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .productLayout {
+    flex-direction: column;
+  }
+}

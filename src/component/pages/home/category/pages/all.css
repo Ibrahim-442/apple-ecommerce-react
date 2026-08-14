@@ -154,42 +154,9 @@
   }
 }
 
-@media (max-width: 768px) {
-  .categoryparent {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  .sideNav {
-    width: 180px;
-    min-width: 180px;
-    flex-shrink: 0;
-    margin-right: 10px;
-    padding: 20px 12px;
-    box-sizing: border-box;
-  }
-
-  .sideNav h3 {
-    font-size: 20px;
-    margin-top: 30px;
-  }
-
-  .sideNav h5 {
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-
-  .sideNav label {
-    font-size: 13px;
-    margin-bottom: 9px;
-  }
-
+ @media (max-width: 768px) {
   .products {
-    flex: 1;
-    width: auto;
-    min-width: 0;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 15px;
@@ -236,24 +203,6 @@
 }
 
 @media (max-width: 500px) {
-  .sideNav {
-    width: 150px;
-    min-width: 150px;
-    padding: 18px 9px;
-  }
-
-  .sideNav h3 {
-    font-size: 18px;
-  }
-
-  .sideNav h5 {
-    font-size: 15px;
-  }
-
-  .sideNav label {
-    font-size: 12px;
-  }
-
   .products {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
@@ -288,24 +237,6 @@
 }
 
 @media (max-width: 400px) {
-  .sideNav {
-    width: 135px;
-    min-width: 135px;
-    padding: 15px 7px;
-  }
-
-  .sideNav h3 {
-    font-size: 17px;
-  }
-
-  .sideNav h5 {
-    font-size: 14px;
-  }
-
-  .sideNav label {
-    font-size: 11px;
-  }
-
   .products {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
